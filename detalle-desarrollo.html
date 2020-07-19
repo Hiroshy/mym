@@ -4,9 +4,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- Mis estilos -->
     <link rel="stylesheet" href="css/tema-web.css">
     <!-- Swiper -->
@@ -29,9 +26,7 @@
             <li class="nav-item">
               <a class="nav-link" href="desarrollos.html">Desarrollos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
+            <li class="mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block nav-item"><a class="btn btn-primary" href="" data-toggle="modal" data-target="#staticBackdrop">Contacto</a></li>
           </ul>
         </div>
     </nav>
@@ -43,7 +38,7 @@
             </div>
         </div>
 
-        <div class="container-fluid">
+        <div class="col-lg-10 mx-auto">
             <div class="row">
                 <div class="col-lg-4 pt-4 formulario-box">
                     <div class="col-md-12 bg-primary">
@@ -158,9 +153,53 @@
         </div>
 
     </aside>
+
+    <a id="whatsapp" href="https://web.whatsapp.com/send?phone=+5215535688499" target="_blank" class="whats pulse-whats"><i class="fab fa-whatsapp" style="margin-top:15px;"></i></a>
+
     <footer class="container-fluid text-center bg-dark-hard py-4 mt-4 text-light">
         <span class="lead">© 2020 M&M | Todos los derechos reservados |</span> <a href="#" class="alert-link text-light">Aviso de Privacidad</a>
     </footer>
+
+     <!-- mi modal -->
+     <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Contácta</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="nombre" class="text-dark">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre Completo" required min-lenght="5">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono" class="text-dark">Teléfono</label>
+                        <input type="phone" name="telefono" id="telefono" class="form-control" placeholder="772-125-147" required min-lenght="5">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="text-dark">Correo Electrónico</label>
+                        <input type="text" name="email" id="email" class="form-control" placeholder="alguien@mail.com" required min-lenght="5">
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre" class="text-dark">Mensaje</label>
+                        <textarea name="nombre" id="nombre" class="form-control" placeholder="Escríbenos aquí.."></textarea>
+                    </div>
+                    <!-- <div class="form-group">
+                        <button type="submit" class="btn btn-dark">Enviar mensaje</button>
+                    </div> -->
+                </form>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+              <button type="button" class="btn btn-primary">Contactar</button>
+            </div>
+          </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>

@@ -1,5 +1,8 @@
 /*!
- * Tema Invirix usando framework BOOTSTRAPP
+ * Bootstrap v4.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
  :root {
     --blue: #007bff;
@@ -351,7 +354,7 @@ h6,
     font-size: 1rem;
 }
 .lead {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 300;
 }
 .display-1 {
@@ -13314,10 +13317,6 @@ html{
     font-weight: 800;
     text-transform: none;
     line-height: 1.19em;
-}
-
-.titulo-propiedad:hover{
-    color: #153f71 !important;
 }
 
 /* swiper */
