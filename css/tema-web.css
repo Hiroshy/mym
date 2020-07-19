@@ -1,0 +1,139 @@
+/* Layout */
+.text-blue{
+    color: #153f71;
+}
+.bg-primary{
+    background-color: #153F71 !important;
+}
+.bg-dark-hard{
+    background-color: black;
+}
+.bg-mask{
+    background: rgba(0,0,0,.5);
+}
+.bg-nosotros{
+    background-color: blue;
+    width: 100%;
+    height: 250px;
+}
+.fullscreen{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 100vh;
+}
+.bg-cabecera-padre{
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.bg-cabecera{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dflex{
+    /* background-color: black; */
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-grow: 1;
+    flex: 1;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5px ;
+    margin-right: 5px;
+}
+.dflex-start{
+    justify-content: start;
+    align-self: flex-start;
+    align-items: stretch;
+}
+/* par */
+/* .dflex:nth-child(even){
+    border-left:2px solid #fff;
+} */
+/* impar */
+/* .dflex:nth-child(odd){
+    border-right:2px solid #fff;
+} */
+/* Botones */
+.btn{
+    max-width: 100%;
+    border-radius: 30px;
+    transition: all 0.3s cubic-bezier(0.5, 0.12, 0.46, 0.88);
+}
+.btn-dark {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+.boton-accion{
+    display: block;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+.alert-link:hover{
+    text-decoration: none;
+}
+.titulo-cabecera-propiedad{
+    text-align: center;
+    color: #fff;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 3em;
+    font-weight: 800;
+    text-transform: none;
+    line-height: 1.19em;
+}
+.titulo-propiedad{
+    text-align: left;
+    color: #153f71;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 2.2em;
+    font-weight: 800;
+    text-transform: none;
+    line-height: 1.19em;
+}
+
+/* swiper */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  /* media query */
+  @media screen and (max-width:500px){
+    .formulario-box{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .titulo-cabecera-propiedad{
+        font-size: 2.5em;
+    }
+  }
