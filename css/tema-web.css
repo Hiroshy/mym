@@ -13379,4 +13379,7 @@ html{
     .text-responsive{
         font-size: 1.5em;
     }
+    .display-3 {
+        font-size: 2rem;
+    }
   }
