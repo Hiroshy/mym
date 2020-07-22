@@ -204,15 +204,28 @@
     <!-- Optional JavaScript -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper('.swiper-container', {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          freeMode: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-        });
+        window.addEventListener("load",()=>{
+            if(screen.width<500){
+                var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                freeMode: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                });
+            }else{
+                var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                freeMode: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                });
+            }
       </script>
     <!-- Place your kit's code here -->
     <script src="https://kit.fontawesome.com/0ce30eaf4c.js" crossorigin="anonymous"></script>
