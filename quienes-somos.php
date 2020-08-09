@@ -1,52 +1,50 @@
+<?php 
+    require_once('modelo/info.class.php'); 
+    $tienda->asigna_metaDescription("Articulos para oficina,el hogar y soporte en Cómputo");
+    $tienda->asigna_metaKeywords("clave1, clave2, clave3");
+    $tienda->asigna_titulOpcional("Departamentos de Lujo");
+?>
 <!doctype html>
 <html lang="es">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Mis estilos -->
-    <link rel="stylesheet" href="css/tema-web.css">
-    <!-- Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <style>
-        .swiper-container {
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 300px;
-      height: 300px;
-
-    }
-    </style>
-    <title>M&M Inmobiliaria</title>
-  </head>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="<?php echo $tienda->metaDescription() ?>">
+        <meta name="twitter:image" content="">
+        <meta name="twitter:url" content="">
+        <meta name="twitter:image:width" content="1200">
+        <meta name="twitter:image:height" content="1200">
+        <meta name="twitter:image:alt" content="">
+        <meta property="og:locale" content="es_MX">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:site_name" content="<?php echo $tienda->nombreTienda();?>">
+        <meta property="og:title" content=" | <?php echo $tienda->nombreTienda();?>">
+        <meta property="og:description" content="<?php echo $tienda->metaDescription() ?> ">
+        <meta property="og:image" content="">
+        <meta property="og:image:url" content="">
+        <meta property="og:image:secure_url" content="">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="1200">
+        <meta property="og:image:alt" content="">
+        <meta name="robots" content="index,follow">
+        <meta name=description content="<?php echo $tienda->metaDescription() ?>">
+        <meta name=keywords content="<?php echo $tienda->metaKeywords() ?>">
+        <meta name=author content="<?php echo $tienda->autor();?>">
+        <title> <?php echo $tienda->nombreTienda();?> | <?php echo $tienda->titulOpcional();?> </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Mis estilos -->
+        <link rel="stylesheet" href="css/tema-web.css">
+        
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/nosotros.css">
+    </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">
-            <!-- <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">  -->
-            M & M
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="quienes-somos.html">Quienes Somos <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="desarrollos.html">Desarrollos</a>
-            </li>
-            <li class="mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block nav-item"><a class="btn btn-primary" href="" data-toggle="modal" data-target="#staticBackdrop">Contacto</a></li>
-          </ul>
-        </div>
-    </nav>
-
+    <?php include("partes/barra_navegacion.php");?>
+    
     <aside>
         <ul class="navigator-page">
             <li class="navigator-link">
@@ -157,56 +155,21 @@
         
 
     </aside>
-    <a id="whatsapp" href="https://web.whatsapp.com/send?phone=+5215535688499" target="_blank" class="whats pulse-whats"><i class="fab fa-whatsapp" style="margin-top:15px;"></i></a>
-    
-    <footer class="container-fluid text-center bg-dark-hard py-4 text-light">
+    <footer class="container-fluid text-center bg-dark-hard py-4 mt-4 text-light">
         <span class="lead">© 2020 M&M | Todos los derechos reservados |</span> <a href="#" class="alert-link text-light">Aviso de Privacidad</a>
     </footer>
 
-     <!-- mi modal -->
-     <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">Contácta</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <form action="">
-                    <div class="form-group">
-                        <label for="nombre" class="text-dark">Nombre</label>
-                        <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre Completo" required min-lenght="5">
-                    </div>
-                    <div class="form-group">
-                        <label for="telefono" class="text-dark">Teléfono</label>
-                        <input type="phone" name="telefono" id="telefono" class="form-control" placeholder="772-125-147" required min-lenght="5">
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="text-dark">Correo Electrónico</label>
-                        <input type="text" name="email" id="email" class="form-control" placeholder="alguien@mail.com" required min-lenght="5">
-                    </div>
-                    <div class="form-group">
-                        <label for="nombre" class="text-dark">Mensaje</label>
-                        <textarea name="nombre" id="nombre" class="form-control" placeholder="Escríbenos aquí.."></textarea>
-                    </div>
-                    <!-- <div class="form-group">
-                        <button type="submit" class="btn btn-dark">Enviar mensaje</button>
-                    </div> -->
-                </form>
-            </div>
-            <div class="modal-footer">
-              <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-              <button type="button" class="btn btn-primary">Contactar</button>
-            </div>
-          </div>
-        </div>
-    </div>
+    <?php include("partes/modal.php");?>
+    <?php include("partes/metaweb.php");?>
+    <?php include("partes/plugin.php");?>
+
     <!-- Optional JavaScript -->
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/0ce30eaf4c.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper('.swiper-container', {
+        window.addEventListener("load",()=>{
+          var swiper = new Swiper('.swiper-container', {
             effect: 'coverflow',
             grabCursor: true,
             centeredSlides: true,
@@ -221,8 +184,9 @@
             pagination: {
                 el: '.swiper-pagination',
             },
-        });
-      </script>
+          });
+        })
+    </script>
     <!-- Place your kit's code here -->
     <script src="https://kit.fontawesome.com/0ce30eaf4c.js" crossorigin="anonymous"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
