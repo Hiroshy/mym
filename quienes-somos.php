@@ -46,7 +46,7 @@
     <?php include("partes/barra_navegacion.php");?>
     
     <aside>
-        <ul class="navigator-page">
+        <!-- <ul class="navigator-page">
             <li class="navigator-link">
                 <a href="#" class="alert-link" data-toggle="tooltip" data-placement="left" title="Inicio">
                     <i class="fas fa-circle-notch fa-2x font-weight-bold"></i>
@@ -67,7 +67,7 @@
                     <i class="fas fa-circle-notch fa-2x font-weight-bold"></i>
                 </a>
             </li>
-        </ul>
+        </ul> -->
         <div class="container-fluid bg-cabecera-padre px-0"  style="background-image: url(media/desarrollos/satelite4.jpg);background-size: cover;">
             <div class="container-fluid px-0 bg-mask bg-cabecera text-center">
                 <h1 class="text-light titulo-cabecera-propiedad">M&M</h1>

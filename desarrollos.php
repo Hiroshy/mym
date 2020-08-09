@@ -81,7 +81,7 @@
                 <?php for ($i=0; $i < 10; $i++) {  ?>
                     <div class="row pb-4">
                         <div class="col-lg-6 px-0 align-self-center">
-                            <div id="carrusel1" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div id="carrusel<?php echo $i;?>" class="carousel slide carousel-fade" data-ride="carousel">
                                 <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="media/desarrollos/demo.jpg" class="d-block w-100" alt="...">
@@ -99,11 +99,11 @@
                                     <img src="media/desarrollos/demo-6.jpg" class="d-block w-100" alt="...">
                                 </div>
                                 </div>
-                                <a class="carousel-control-prev" href="#carrusel1" role="button" data-slide="prev">
+                                <a class="carousel-control-prev" href="#carrusel<?php echo $i;?>" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                                 </a>
-                                <a class="carousel-control-next" href="#carrusel1" role="button" data-slide="next">
+                                <a class="carousel-control-next" href="#carrusel<?php echo $i;?>" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                                 </a>

@@ -8,31 +8,7 @@
 <html lang="es">
     <head>
         <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="">
-        <meta name="twitter:description" content="<?php echo $tienda->metaDescription() ?>">
-        <meta name="twitter:image" content="">
-        <meta name="twitter:url" content="">
-        <meta name="twitter:image:width" content="1200">
-        <meta name="twitter:image:height" content="1200">
-        <meta name="twitter:image:alt" content="">
-        <meta property="og:locale" content="es_MX">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="">
-        <meta property="og:site_name" content="<?php echo $tienda->nombreTienda();?>">
-        <meta property="og:title" content=" | <?php echo $tienda->nombreTienda();?>">
-        <meta property="og:description" content="<?php echo $tienda->metaDescription() ?> ">
-        <meta property="og:image" content="">
-        <meta property="og:image:url" content="">
-        <meta property="og:image:secure_url" content="">
-        <meta property="og:image:width" content="1200">
-        <meta property="og:image:height" content="1200">
-        <meta property="og:image:alt" content="">
-        <meta name="robots" content="index,follow">
-        <meta name=description content="<?php echo $tienda->metaDescription() ?>">
-        <meta name=keywords content="<?php echo $tienda->metaKeywords() ?>">
-        <meta name=author content="<?php echo $tienda->autor();?>">
+        <?php require_once('partes/identificacion_web.php'); ?>
         <title> <?php echo $tienda->nombreTienda();?> | <?php echo $tienda->titulOpcional();?> </title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Mis estilos -->
@@ -96,6 +72,47 @@
             <h3 class="display-3 font-weight-bold text-serif text-shadow mb-3">Estas listo para el depa de tus sueños ?</h3>
             <a class="btn btn-light" href="category-rooms.html">Lo quiero <i class="fas fa-heart"></i></a>
           </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="container py-5">
+            <h3>Departamentos en <strong>CDMX</strong></h3>
+        </div>
+        <!-- Swiper -->
+        <div class="container">
+            <div class="swiper-container pb-4">
+                <div class="swiper-wrapper">
+                <?php for ($i=0; $i < 10; $i++) { ?>
+                <div class="swiper-slide">
+                    <div class="col-lg-12 hover-animate">
+                        <div class="card shadow border-0 h-100">
+                            <a href="detalle-desarrollo">
+                                <img class="img-fluid card-img-top" src="https://d19m59y37dris4.cloudfront.net/directory/1-5/img/photo/photo-1512917774080-9991f1c4c750.jpg" 
+                            alt="">
+                            </a>
+                          <div class="card-body"><a class="text-uppercase text-muted text-sm letter-spacing-2" href="#">DEPTO </a>
+                            <h5 class="my-2">
+                                <a class="text-dark" href="detalle-desarrollo">
+                                    Autumn fashion tips and trick
+                                </a>
+                            </h5>
+                            <p class="text-gray-500 text-sm my-3"><i class="far fa-clock mr-2"></i>January 16, 2016</p>
+                            <p class="my-2 text-muted text-sm">Pellentesque habitant morbi tristique senectus. Vestibulum tortor quam, 
+                                feugiat vitae, ultricies ege...
+                            </p>
+                            <a class="btn btn-link pl-0 alert-link" href="detalle-desarrollo">
+                               Ver desarrollo<i class="fa fa-long-arrow-alt-right ml-2"></i>
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <?php } ?>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
     </section>
 

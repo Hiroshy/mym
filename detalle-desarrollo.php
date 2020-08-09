@@ -92,7 +92,7 @@
                 <div class="col-lg-8 pt-4">
                    
                     <div class="form-group">
-                        <a href="https://goo.gl/maps/JLwRtR2MNbiajbkYA" class="titulo-propiedad alert-link text-blue">Puerta Tlaneplanta <i class="fas fa-map-marker-alt"></i></a>
+                        <h1 class="titulo-propiedad alert-link text-blue">Puerta Tlaneplanta </h1>
                     </div>
                  
                     <div class="form-group">

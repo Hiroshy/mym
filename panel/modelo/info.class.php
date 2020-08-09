@@ -94,7 +94,7 @@
     }
 
     $tienda=new Tienda('AM Real State',5621429436,'',5621429436);
-    $tienda->asigna_iconoAplicacion("media/logo/logo am real state_circle.png");
-    $tienda->asigna_iconoAplicacionNav("media/logo/logo_am_real_estate.png");
+    $tienda->asigna_iconoAplicacion("../media/logo/logo am real state_circle.png");
+    $tienda->asigna_iconoAplicacionNav("../media/logo/logo_am_real_estate.png");
     $tienda->asigna_autor("Invirix");
 ?>
