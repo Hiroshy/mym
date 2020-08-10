@@ -30,31 +30,38 @@
               <p> <span class="badge badge-secondary-light">Ultima sesión:&nbsp;&nbsp;&nbsp; 10/11/12 &nbsp;&nbsp;&nbsp;&nbsp; 13:12</span></p>
             </div>
             <div id="proyectos" class="text-block">
-              <h4 class="mb-5">Nombre Completo Interesado</h4>
-              <div class="form-group">
-                <div class="form-group">
-                    <p class="lead">
-                        Nombre: Arturo
-                    </p>
-                </div>
-                <div class="form-group">
-                    <p class="lead">
-                        Teléfono: 55555-55555
-                    </p>
-                </div>
-                <div class="form-group">
-                    <p class="lead">
-                        Email: ejemplo@mail.com
-                    </p>
-                </div>
-                <div class="form-group">
-                    <p class="lead">
-                    Mensaje: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quo eaque fuga a ipsam atque, recusandae esse repudiandae possimus vel suscipit cupiditate in excepturi nam facere enim perferendis aliquam natus?
-                    </p>
-                </div>
-                <div class="form-group">
-                    <a href="interesados" class="btn btn-primary">Volver</a>
-                </div>
+              <h4 class="mb-5">Editando Proyecto</h4>
+              <div class="row">
+                <form action="" class="form container-fluid">
+                    <div class="form-row ">
+                        <div class="col-md-6 mb-2">
+                            <label for="estado">Estado</label>
+                            <select name="estado" id="estado" class="custom-select">
+                                <option value="CDMX">CDMX</option>
+                                <option value="ESTADO DE MEXICO">ESTADO DE MEXICO</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <label for="proyecto">Nombre del Proyecto</label>
+                            <input type="text" class="form-control" placeholder="" name="proyecto">
+                        </div>
+                        <div class="col-md-12 mb-2">
+                            <label for="precio">precio</label>
+                            <input type="text" class="form-control" placeholder="" name="precio">
+                        </div>
+                        <div class="col-md-12 mb-2">
+                            <label for="descripcion">Descripcion</label>
+                            <textarea name="descripcion" id="" class="form-control w-100"></textarea>
+                        </div>
+                        <div class="col-md-12 mb-2">
+                            <label for="descripcion">Resumen</label>
+                            <textarea name="descripcion" id="" class="form-control w-100"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="btn btn-primary" type="submit">Guardar</button>
+                        </div>
+                    </div>
+                </form>
               </div>
             </div>
             
@@ -76,6 +83,7 @@
     <!-- Place your kit's code here -->
     <script src="https://kit.fontawesome.com/0ce30eaf4c.js" crossorigin="anonymous"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <!-- mi script -->

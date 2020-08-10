@@ -19,14 +19,25 @@
             <ul class="navbar-nav ml-auto">
               <li class="nav-item"><a class="nav-link" href="index">Inicio</a></li>
               <!-- Megamenu-->
-              <li class="nav-item"><a class="nav-link" href="index#proyectos">Proyecto</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Proyecto
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="index#proyecto">Nuevo proyecto</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="proyectos">Ver proyecto</a>
+                </div>
+              </li>
               <!-- /Megamenu end-->
               <li class="nav-item"><a class="nav-link" href="interesados">Citas</a></li>
               <li class="nav-item"><a class="nav-link" href="datos">Recopilación</a></li>
-              <li class="nav-item dropdown ml-lg-3"><a id="userDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="avatar avatar-sm avatar-border-white mr-2" src="https://d19m59y37dris4.cloudfront.net/directory/1-5/img/photo/photo-1512917774080-9991f1c4c750.jpg" alt="Jack London"></a>
+              <li class="nav-item dropdown ml-lg-3">
+                <a id="userDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                  <img class="avatar avatar-sm avatar-border-white mr-2" src="https://d19m59y37dris4.cloudfront.net/directory/1-5/img/photo/photo-1512917774080-9991f1c4c750.jpg" alt="Jack London"></a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdownMenuLink">
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="login.html"><i class="fas fa-sign-out-alt mr-2 text-muted"></i> Salir</a>
+                  <a class="dropdown-item" href="login"><i class="fas fa-sign-out-alt mr-2 text-muted"></i> Salir</a>
                 </div>
               </li>
             </ul>

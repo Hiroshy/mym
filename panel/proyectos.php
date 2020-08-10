@@ -20,39 +20,52 @@
     <aside>
     <div class="container-fluid py-5"></div>
     <section class="py-5">
-      <div class="container">
+      <div class="col-lg-11 mx-auto">
         <div class="row">
           <div class="col-lg-3 mr-lg-auto">
-          <?php include("partes/panel.php");?>
+            <?php include("partes/panel.php");?>
           </div>
           <div class="col-lg-9 pl-lg-5">
-            <h1 class="hero-heading mb-0">Hola, Admin!</h1>
+            <h1 class="hero-heading mb-0">Proyectos Registrados!</h1>
             <div class="text-block">
-              <p> <span class="badge badge-secondary-light">Ultima sesión:&nbsp;&nbsp;&nbsp; 10/11/12 &nbsp;&nbsp;&nbsp;&nbsp; 13:12</span></p>
+              <p> <span class="badge badge-secondary-light">Ultima actualización:&nbsp;&nbsp;&nbsp; 10/11/12 &nbsp;&nbsp;&nbsp;&nbsp; 13:12</span></p>
             </div>
             <div class="text-block">
-            <table id="myTable" class="table table-responsive" style="width:100%;">
+            <table id="myTable" class="table table-responsive-lg" style="width:100%;">
                 <thead>
                     <tr>
                     <th scope="col">#</th>
                     <th scope="col">Nombre</th>
-                    <th scope="col">Teléfono</th>
-                    <th scope="col">Correo</th>
-                    <th scope="col">Mensaje</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Resumen</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php for ($i=1; $i < 100; $i++) { ?>
+                    <?php for ($i=0; $i < 99; $i++) { ?>
                     <tr>
-                        <th scope="row"><?php echo $i ;?></th>
+                        <th scope="row"><?php echo $i+1 ;?></th>
                         <td><a href="interesado?">Mark<?php echo $i ;?></a></td>
                         <td><a href="tel:5555555555">5555555555<?php echo $i ;?></a></td>
-                        <td><a href="mailto:hiroshywissell@gmail.com">hiroshywissell<?php echo $i ;?>@gmail.com</a></td>
+                        <td><a href="interesado?">Chrome<?php echo $i ;?></a></td>
                         <td style="text-overflow: ellipsis;"> 
                             <a href="interesado?">
-                                Lorem<?php echo $i ;?> ipsum dolor sit amet consectetur adipisicing elit. Neque, esse consectetur. Laboriosam reprehenderit 
-                                nesciunt esse laudantium deleniti. Illo aliquid vitae consequuntur placeat sequi necessitatibus impedit 
-                                repudiandae eaque! Enim, molestiae nulla.
+                                10/11/12 10:3<?php echo $i ;?> am
+                            </a>
+                        </td>
+                        <td style="text-overflow: ellipsis;"> 
+                            <a href="interesado?">
+                                12<?php echo $i ;?>.0.0.1
+                            </a>
+                        </td>
+                        <td style="text-overflow: ellipsis;"> 
+                            <a href="editar-proyecto" class="mx-1">
+                                <i class="fas fa-pencil-alt"></i>
+                            </a>
+                            <a href="proyectos?eliminar=1" class="mx-1" data-toggle="modal" data-target="#elimina">
+                                <i class="fas fa-trash-alt"></i>
                             </a>
                         </td>
                     </tr>
@@ -70,6 +83,27 @@
     <footer class="container-fluid text-center bg-dark-hard py-4 mt-4 text-light">
         <span class="lead">© 2020 M&M | Todos los derechos reservados |</span> <a href="#" class="alert-link text-light">Aviso de Privacidad</a>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="elimina" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Eliminar Proyecto</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            ¿Estas seguro que quieres eliminar este proyecto? &nbsp;&nbsp;&nbsp;Esta acción es permanente y no se podra recuperar.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-secondary ">Borralo!</button>
+        </div>
+        </div>
+    </div>
+    </div>
 
     <?php include("partes/metaweb.php");?>
 

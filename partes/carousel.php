@@ -2,7 +2,7 @@
             <div class="hero-slider">
             <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
             <div class="container py-6 py-md-7 text-white z-index-20">
-              <div class="row">
+              <!-- <div class="row">
                 <div class="col-xl-12">
                   <div class="text-center text-lg-left">
                     <p class="subtitle letter-spacing-4 mb-2 text-primary text-shadow">La mejor inmobiliaria de México</p>
@@ -27,6 +27,6 @@
                     </form>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
     </section>

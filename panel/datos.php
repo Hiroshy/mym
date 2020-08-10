@@ -23,41 +23,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 mr-lg-auto">
-            <div class="card border-0 shadow mb-6 mb-lg-0">
-              <div class="card-header bg-gray-100 py-4 border-0 text-center"><a class="d-inline-block" href="#"><img class="d-block avatar avatar-xxl p-2 mb-2" src="https://d19m59y37dris4.cloudfront.net/directory/1-5/img/photo/photo-1512917774080-9991f1c4c750.jpg" alt=""></a>
-                <h5>Administrador</h5>
-                <p class="text-muted text-sm mb-0">Azcapotzalco, CDMX  </p>
-              </div>
-              <div class="card-body p-4">
-                <div class="media align-items-center mb-3">
-                  <div class="icon-rounded icon-rounded-sm bg-primary-light mr-2">
-                    <svg class="svg-icon text-primary svg-icon-md">
-                      <use xlink:href="#diploma-1"> </use>
-                    </svg>
-                  </div>
-                  <div class="media-body">
-                    <p class="mb-0">2877 Proyectos</p>
-                  </div>
-                </div>
-                <div class="media align-items-center mb-3">
-                  <div class="icon-rounded icon-rounded-sm bg-primary-light mr-2">
-                    <svg class="svg-icon text-primary svg-icon-md">
-                      <use xlink:href="#checkmark-1"> </use>
-                    </svg>
-                  </div>
-                  <div class="media-body">
-                    <p class="mb-0">258 Interesados</p>
-                  </div>
-                </div>
-                <hr>
-                <h6>Enlaces</h6>
-                <ul class="card-text text-muted">
-                  <li>Proyectos</li>
-                  <li>Leads</li>
-                  <li>Recopilación de datos</li>
-                </ul>
-              </div>
-            </div>
+            <?php include("partes/panel.php");?>
           </div>
           <div class="col-lg-9 pl-lg-5">
             <h1 class="hero-heading mb-0">Hola, Admin!</h1>
@@ -65,7 +31,7 @@
               <p> <span class="badge badge-secondary-light">Ultima sesión:&nbsp;&nbsp;&nbsp; 10/11/12 &nbsp;&nbsp;&nbsp;&nbsp; 13:12</span></p>
             </div>
             <div class="text-block">
-            <table id="myTable" class="table" style="width:100%;">
+            <table id="myTable" class="table table-responsive-lg" style="width:100%;">
                 <thead>
                     <tr>
                     <th scope="col">#</th>
@@ -80,17 +46,17 @@
                     <?php for ($i=0; $i < 99; $i++) { ?>
                     <tr>
                         <th scope="row"><?php echo $i ;?></th>
-                        <td><a href="interesado?">Mark</a></td>
-                        <td><a href="tel:5555555555">5555555555</a></td>
-                        <td><a href="interesado?">Chrome</a></td>
+                        <td><a href="interesado?">Mark<?php echo $i ;?></a></td>
+                        <td><a href="tel:5555555555">5555555555<?php echo $i ;?></a></td>
+                        <td><a href="interesado?">Chrome<?php echo $i ;?></a></td>
                         <td style="text-overflow: ellipsis;"> 
                             <a href="interesado?">
-                                10/11/12 10:32 am
+                                10/11/12 10:3<?php echo $i ;?> am
                             </a>
                         </td>
                         <td style="text-overflow: ellipsis;"> 
                             <a href="interesado?">
-                                127.0.0.1
+                                12<?php echo $i ;?>.0.0.1
                             </a>
                         </td>
                     </tr>
