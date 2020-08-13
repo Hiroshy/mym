@@ -13,6 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Mis estilos -->
         <link rel="stylesheet" href="../css/tema-web.css">
+        <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
     </head>
   <body>
   <?php include("partes/barra_navegacion.php");?>
@@ -32,7 +33,7 @@
             <div id="proyectos" class="text-block">
               <h4 class="mb-5">Nuevo Proyecto</h4>
               <div class="row">
-                <form action="" class="form container-fluid">
+                <form action="" class="form container-fluid" enctype="multipart/form-data">
                     <div class="form-row ">
                         <div class="col-md-6 mb-2">
                             <label for="estado">Estado</label>
@@ -45,13 +46,38 @@
                             <label for="proyecto">Nombre del Proyecto</label>
                             <input type="text" class="form-control" placeholder="" name="proyecto">
                         </div>
+                        <div class="col-md-6 mb-2">
+                            <label for="estado">Tipo</label>
+                            <select name="estado" id="estado" class="custom-select">
+                                <option value="Entrega inmediata">Entrega inmediata</option>
+                                <option value="Post Venta">Post Venta</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <label for="estado">Tipo Inmueble</label>
+                            <select name="estado" id="estado" class="custom-select">
+                                <option value="Post Venta">Departamento</option>
+                                <option value="Entrega inmediata">Casa</option>
+                            </select>
+                        </div>
                         <div class="col-md-12 mb-2">
                             <label for="precio">precio</label>
                             <input type="text" class="form-control" placeholder="" name="precio">
                         </div>
                         <div class="col-md-12 mb-2">
+                            <label for="resumen">Resumen</label>
+                            <textarea name="resumen" id="" class="form-control w-100"></textarea>
+                        </div>
+                        <div class="col-md-12 mb-2">
                             <label for="descripcion">Descripcion</label>
-                            <textarea name="descripcion" id="" class="form-control w-100"></textarea>
+                            <textarea name="descripcion" class="form-control w-100"></textarea>
+                        </div>
+                        <div class="col-md-12 mb-2 form-group">
+                        <label for="">Fotos del Desarrollo</label>
+                          <div class="custom-file">
+                            <input type="file" multiple="true" class="custom-file-input" id="customFileLang" lang="es" name="imagenProyecto" accept="image/png, .jpeg, .jpg, image/gif">
+                            <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+                          </div>
                         </div>
                         <div class="col-md-12">
                             <button class="btn btn-primary" type="submit">Guardar</button>
@@ -60,7 +86,7 @@
                 </form>
               </div>
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -76,13 +102,29 @@
     <!-- Optional JavaScript -->
     <!-- Place your kit's code here -->
     <script src="https://kit.fontawesome.com/0ce30eaf4c.js" crossorigin="anonymous"></script>
-    <!-- Place your kit's code here -->
-    <script src="https://kit.fontawesome.com/0ce30eaf4c.js" crossorigin="anonymous"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Place your kit's code here -->
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+    <script>
+      $(document).ready(function () {
+        bsCustomFileInput.init()
+      })
+    </script>
     <!-- mi script -->
     <script src="js/tema.js"></script>
+    
+    <!-- Include the Quill library -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+    <!-- Initialize Quill editor -->
+    <script>
+      var quill = new Quill('#editor', {
+        theme: 'snow'
+      });
+    </script>
 </body>
 </html>
